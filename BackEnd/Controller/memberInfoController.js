@@ -1,7 +1,7 @@
 const MemberInfo = require('../models/memberInfoModel')
 
 
-/// Creat getAllMemberInfo
+/// Creat MemberInfo
 exports.creatMemberInfo = async (req, res, next) => {
     const MemberInfodata = await MemberInfo.create(req.body)
     res.status(201).json({
@@ -10,7 +10,7 @@ exports.creatMemberInfo = async (req, res, next) => {
     })
 }
 
-/// get getAllMemberInfo
+///  getAllMemberInfo
 
 exports.getAllMemberInfo = async (req, res) => {
     const MemberInfo = await MemberInfo.find()
