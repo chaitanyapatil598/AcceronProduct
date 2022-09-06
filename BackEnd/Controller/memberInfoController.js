@@ -13,9 +13,9 @@ exports.creatMemberInfo = async (req, res, next) => {
 /// get getAllMemberInfo
 
 exports.getAllMemberInfo = async (req, res) => {
-    const MemberInfo = await MemberInfo.find()
+    const MemberInfoData = await MemberInfo.find()
     res.status(200).json({
         success: true,
-        MemberInfo
+        MemberInfoData
     })
 }

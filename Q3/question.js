@@ -51,14 +51,14 @@
   
 // 3)********************************
 //   Write a MongoDB query to find the restaurant name, borough, longitude and
-// attitude and cuisine for those restaurants which contain 'Mad' as first three letters
+// Altitude and cuisine for those restaurants which contain 'Mad' as first three letters
 // of its name.
 
 [
     {
       '$match': {
         'name': {
-          '$regex': new RegExp('^M')
+          '$regex':/^Mad/,
         }
       }
     }, {
